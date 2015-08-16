@@ -72,6 +72,7 @@ redis.on( "error", callback );
 ```
 
 redis 驗證
+如果在 redis.conf 中有設定需要驗證的話，須在在此填入驗證碼，類似密碼的意思。
 
 ``` js
 redis.auth("AndrewChen");

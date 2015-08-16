@@ -9,9 +9,13 @@ redis.on("error", function (err) {
 
 //連線時觸發
 //redis.on("connect", runSample);
-//
-//redis.auth("AndrewChen"); //驗證
 
+//驗證碼
+//redis.auth("AndrewChen");
+
+/*
+ * set value
+ */
 router.get('/set', function(req, res, next) {
 
   //寫入資料
@@ -25,6 +29,10 @@ router.get('/set', function(req, res, next) {
   });
 });
 
+
+/*
+ * get value
+ */
 router.get('/get', function(req, res, next) {
 
   //取得資料
